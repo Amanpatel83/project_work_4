@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/system.xsd">
+    <system>
+        <section id="payment">
+            <group id="paypal_payment" translate="label">
+                <label>PayPal Payment Settings</label>
+                <sortOrder>1</sortOrder>
+                <field id="enabled" translate="label" type="select">
+                    <label>Enable PayPal Payment</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <sortOrder>10</sortOrder>
+                </field>
+                <field id="api_username" translate="label">
+                    <label>API Username</label>
+                    <sortOrder>20</sortOrder>
+                </field>
+                <field id="api_password" translate="label">
+                    <label>API Password</label>
+                    <sortOrder>30</sortOrder>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
